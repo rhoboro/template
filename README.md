@@ -20,6 +20,15 @@ egg: spam
 
 ```
 
+## with docker command
+
+```sh
+$ docker run -it --rm \
+    -v `pwd`:/usr/src/app \
+    rhoboro/template:latest \
+    template HAM=ham EGG=spam sample.txt
+```
+
 ## Updating
 
 ```sh
